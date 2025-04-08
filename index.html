@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ace Lane Sdn Bhd | Industrial Property Experts</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Inter', sans-serif; line-height: 1.6; background: #ffffff; color: #1f2937; }
+    header { background: #0f172a; color: #fff; padding: 20px 40px; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+    header h1 { font-size: 1.8rem; font-weight: 700; display: flex; align-items: center; }
+    header img { height: 40px; margin-right: 12px; }
+    nav a { color: #cbd5e1; margin-left: 24px; text-decoration: none; font-weight: 500; transition: color 0.3s; }
+    nav a:hover { color: #fff; }
+    .hero { padding: 80px 40px; background: linear-gradient(to right, #e0f2fe, #f8fafc); text-align: center; }
+    .hero h2 { font-size: 3rem; margin-bottom: 20px; font-weight: 700; color: #0f172a; }
+    .hero p { font-size: 1.25rem; margin-bottom: 30px; color: #475569; }
+    .cta-btn { padding: 14px 28px; background: #0ea5e9; color: #fff; border: none; border-radius: 8px; margin: 5px; font-weight: 600; cursor: pointer; transition: background 0.3s; }
+    .cta-btn:hover { background: #0284c7; }
+    .section { padding: 80px 40px; background: #f8fafc; }
+    .section h3 { font-size: 2.5rem; margin-bottom: 40px; color: #0f172a; text-align: center; }
+    .features, .listings, .testimonials { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+    .card { background: #fff; padding: 24px; border-radius: 10px; box-shadow: 0 2px 12px rgba(0,0,0,0.05); }
+    .card h4 { margin-bottom: 10px; color: #1e293b; }
+    .card p { color: #475569; }
+    .form-section, .contact-info { background: #fff; padding: 80px 40px; text-align: center; }
+    form { max-width: 600px; margin: 0 auto; text-align: left; }
+    form input, form textarea { width: 100%; padding: 14px; margin: 12px 0; border: 1px solid #e2e8f0; border-radius: 6px; font-size: 1rem; }
+    form button { background: #0ea5e9; color: #fff; padding: 14px 24px; border: none; border-radius: 6px; cursor: pointer; font-weight: 600; }
+    form button:hover { background: #0284c7; }
+    footer { background: #0f172a; color: #cbd5e1; text-align: center; padding: 30px; font-size: 0.95rem; }
+    @media (max-width: 768px) {
+      nav a { margin-left: 16px; }
+      .hero h2 { font-size: 2.25rem; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1><img src="ace_lane_logo.png" alt="Ace Lane Logo"> Ace Lane Sdn Bhd</h1>
+    <nav>
+      <a href="#listings">Listings</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Your Trusted Industrial Space Consultant</h2>
+    <p>We specialize exclusively in rental of warehouses and factories in Malaysia’s major industrial hubs. Trusted by businesses for over 15 years.</p>
+    <button class="cta-btn">Contact Us</button>
+    <button class="cta-btn">View Properties</button>
+  </section>
+
+  <section class="section" id="about">
+    <h3>Why Clients Choose Ace Lane</h3>
+    <div class="features">
+      <div class="card">
+        <h4>Industrial Focus Only</h4>
+        <p>Unlike general real estate firms, we only handle warehouse and factory rentals. That focus means better results for you.</p>
+      </div>
+      <div class="card">
+        <h4>Experienced Consultant</h4>
+        <p>Led by a founder with over 15 years of experience in Malaysia’s industrial sector. We understand your needs deeply.</p>
+      </div>
+      <div class="card">
+        <h4>Transparent & Independent</h4>
+        <p>We’re not tied to any developer. Our advice is objective and based on what’s best for your business.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="listings">
+    <h3>Featured Properties</h3>
+    <div class="listings">
+      <div class="card">
+        <h4>Shah Alam – 100,000 sqft Warehouse</h4>
+        <p>Strategic location near highways. 10 loading bays, 40ft access. Ready immediately.</p>
+      </div>
+      <div class="card">
+        <h4>Johor – 80,000 sqft Detached Factory</h4>
+        <p>Perfect for light manufacturing. High power supply. Secure gated industrial park.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section testimonials">
+    <h3>Client Testimonials</h3>
+    <div class="testimonials">
+      <div class="card">
+        <p>“Ace Lane gave us honest guidance and secured an excellent space for our logistics operations.”</p>
+        <strong>– Logistics Manager, MNC</strong>
+      </div>
+      <div class="card">
+        <p>“They helped us find the right factory quickly. Smooth process, great network.”</p>
+        <strong>– SME Owner, Penang</strong>
+      </div>
+    </div>
+  </section>
+
+  <section class="form-section" id="contact">
+    <h3>Contact Us</h3>
+    <p>We're here to help you find the right industrial space. Reach out to us directly.</p>
+    <form action="#" method="post">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <div class="contact-info">
+      <p>Email: <a href="mailto:info@acelane.com.my">info@acelane.com.my</a></p>
+      <p>Phone: <a href="tel:+60123456789">+60 12-345 6789</a></p>
+      <p>Hours: Monday–Friday, 9am–6pm</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Ace Lane Sdn Bhd | Industrial Space Specialist in Malaysia | Shah Alam • Johor • Penang • Seremban</p>
+  </footer>
+
+  <!-- Live Chat Placeholder -->
+  <script type="text/javascript">
+    var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+    (function() {
+      var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+      s1.async = true;
+      s1.src = 'https://embed.tawk.to/your-property-id/1abcdefg';
+      s1.charset = 'UTF-8';
+      s1.setAttribute('crossorigin', '*');
+      s0.parentNode.insertBefore(s1, s0);
+    })();
+  </script>
+</body>
+</html>
